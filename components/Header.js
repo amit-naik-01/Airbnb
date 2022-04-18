@@ -38,10 +38,10 @@ function Header({placeholder}){
     });
   };
 
-  const selectionRange={
+  const selectionRange = {
     setDate: startDate,
     endDate: endDate,
-    key: 'selection',
+    key: "selection",
   }
 
 

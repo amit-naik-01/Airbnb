@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useRouter } from "next/dist/client/router";
 import { format } from "date-fns";
-import InfoCard from "../../components/InfoCard";
+import InfoCard from "../components/InfoCard";
 
 function Search({searchResults}){
   const router = useRouter();
@@ -28,7 +28,7 @@ function Search({searchResults}){
             <p className="button">Rooms and Beds</p>
             <p className="button">More filters</p>
           </div>
-        
+          
          {searchResults.map(({img, location ,title, description, star ,price, total}) => (
            <InfoCard 
              key={img}
